@@ -1,0 +1,14 @@
+*.log
+*.sql.gz
+*.bak
+*.pem
+*.key
+.env
+.env.*
+*.conf
+!*.conf.dist
+build/
+CMakeFiles/
+CMakeCache.txt
+.DS_Store
+Thumbs.db

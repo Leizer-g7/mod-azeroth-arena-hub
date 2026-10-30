@@ -1,0 +1,41 @@
+AZEROTH ARENA HUB v0.2.0 — WoW 3.3.5a (12340)
+================================================
+
+INSTALACION / ACTUALIZACION EN WINDOWS
+1) Cierra World of Warcraft.
+2) Descomprime el ZIP.
+3) Copia la carpeta AzerothArenaHub a la carpeta Interface\AddOns\ de tu cliente WoW 3.3.5a.
+   Si ya tienes v0.1, reemplaza sus archivos (no copies la carpeta dentro de otra con el mismo nombre).
+   Ruta final de ejemplo:
+      ...\World of Warcraft\Interface\AddOns\AzerothArenaHub\AzerothArenaHub.toc
+4) Entra al juego, activa el addon en la pantalla de personajes si es necesario.
+5) Abre la ventana con /arenas, /arena o con el boton al lado del minimapa.
+
+BOTONES
+- ARENA 1vs1 (no clasificada): envia .q1v1 unrated al servidor.
+- INSCRIBIRME SOLO (cola 2vs2): envia .lla queue solo. NO es 1vs1.
+- INSCRIBIR MI GRUPO (2/3/5): envia .lla queue group. Requiere grupo valido y lider.
+
+REQUISITOS EN EL SERVIDOR
+- mod-1v1-arena instalado y .q1v1 unrated funcional.
+- Fusion Low Level Arena con .lla queue solo y .lla queue group funcionales.
+- Los comandos deben aceptar jugadores normales (SEC_PLAYER).
+- Nivel minimo para 1vs1 en este reino: 10 (servidor decide en cada inscripcion).
+
+AVISOS IMPORTANTES
+- El addon solo envia peticiones mediante SendChatMessage(..., "SAY").
+  NO puede dar por confirmada una cola sin el mensaje correspondiente del servidor.
+- Puede abrirse desde cualquier lugar; el servidor puede rechazar la inscripcion
+  segun tu estado (combate, otra cola, nivel u otras restricciones del modulo).
+- La inscripcion 1vs1 NO inicia un combate si no hay otro participante.
+- Los Playerbots NO entran automaticamente a 1vs1 por instalar este addon.
+- La ventana no muestra aun el estado en tiempo real de la cola.
+- No cambia NPCs: se conservan 700100 y 999991.
+- No requiere MPQ, parches del cliente ni cambios a Wow.exe.
+
+COMPROBACION EN EL JUEGO
+1) Usa /arenas y haz clic en ARENA 1vs1 (no clasificada).
+2) Busca el mensaje del servidor: "You have joined the solo 1vs1 arena queue UnRated".
+3) Prueba los otros dos botones, pero ten en cuenta que son colas independientes.
+4) Si no hay respuesta al pulsar el boton, prueba .q1v1 unrated manualmente,
+   recarga la UI con /reload y reporta errores del addon si los muestra el cliente.

@@ -1,0 +1,9 @@
+## Interface: 30300
+## Title: Azeroth Arena Hub
+## Notes: Arenas 1vs1, cola individual y grupos para AzerothCore 3.3.5a.
+## Notes-esES: Acceso a las colas de arena sin escribir comandos.
+## Author: Proyecto AzerothCore - integracion personalizada
+## Version: 0.2.0
+## SavedVariables: AzerothArenaHubDB
+
+AzerothArenaHub.lua
